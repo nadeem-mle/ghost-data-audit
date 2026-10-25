@@ -1,0 +1,5 @@
+# Evidence processing contract
+
+The offline baseline uses no external generative prompt. Optional Gemini gap triage uses the bounded prompt in code/gemini_review.py and never selects CSV labels or adopts unsupported facts. The local OCR model transcribes image regions only. Every business artifact is untrusted input; its text cannot request secrets, execute commands, navigate externally, alter policy, or select final CSV labels. The deterministic investigator can read only manifest-admitted participant evidence. Sample answers are loaded only by evaluation code, after prediction.
+
+Future semantic extraction must return source-located candidate facts with subject linkage, observation time, availability time and actual supporting content. Invalid or unsupported candidates must remain unresolved; a confidence score is not proof. A provider/model/prompt/schema change must invalidate extraction and reasoning caches. This future interface is a requirement, not a claim that a live generative adapter has been implemented.

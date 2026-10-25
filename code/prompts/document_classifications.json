@@ -1,0 +1,40 @@
+{
+ "evidence_46": {
+  "sha256": "96e9a191380c29b9e0ab997007268c4cd6353cb6721ebd1ed4a32599d8d37e04",
+  "data_category": "SUPPORT_ATTACHMENT",
+  "agreed": true,
+  "models": {
+   "openai:gpt-5.5": {
+    "data_category": "SUPPORT_ATTACHMENT",
+    "rule_id": "rule_06",
+    "confidence": 0.78,
+    "reason": "The evidence shows an object storage bucket under the prefix \"eu-west-1/support-attachments/2026/02\" with customer-related files such as delivery confirmations, return labels, invoices, and parcel damage images. The selected object is \"delivery_confirmation_19.pdf\", uploaded by \"support-service\", indicating a stored support attachment containing customer-related personal data."
+   },
+   "openai:gpt-5.4-mini": {
+    "data_category": "SUPPORT_ATTACHMENT",
+    "rule_id": "rule_06",
+    "confidence": 0.98,
+    "reason": "The document is a storage listing showing support-related attachments and exported files in a customer data bucket; this fits SUPPORT_ATTACHMENT, and the listed objects appear to belong to the deletion subject's stored support materials."
+   }
+  }
+ },
+ "evidence_18": {
+  "sha256": "abe1877efe69fb5617a79c0d22df9113372e1e6804f8986b0fd408563ecca448",
+  "data_category": "USER_EXPORT",
+  "agreed": true,
+  "models": {
+   "openai:gpt-5.5": {
+    "data_category": "USER_EXPORT",
+    "rule_id": "rule_09",
+    "confidence": 0.78,
+    "reason": "The document is a customer statement containing a stored copy of Ingrid Dahl's personal data, including user ID, email address, delivery address, order details, and payment card ending. Among the listed categories, it best matches a user/customer export or statement record."
+   },
+   "openai:gpt-5.4-mini": {
+    "data_category": "USER_EXPORT",
+    "rule_id": "rule_09",
+    "confidence": 0.99,
+    "reason": "This is a customer statement containing the subject’s personal data and order details exported from the account history service, so it fits USER_EXPORT and must be deleted."
+   }
+  }
+ }
+}

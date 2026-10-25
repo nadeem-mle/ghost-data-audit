@@ -1,0 +1,9 @@
+.env
+*.pem
+dataset/
+runs/
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+do_not_read_in_chat_also_not_include_in_zip.md
